@@ -1,0 +1,165 @@
+:root {
+  /* --container-size: 373px; */
+}
+
+body {
+  background-color: rgb(20, 20, 20);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", serif;
+  font-optical-sizing: auto;
+}
+
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+@media (hover: hover) {
+  .page-controls {
+    display: initial;
+  }
+}
+
+/* slider - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+.widthslider {
+  display: block;
+}
+input#width {
+  width: 100%;
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -  */
+
+@media (hover: hover) {
+  /* #container {
+      width: var(--container-size);
+      aspect-ratio: 9 / 19;
+    } */
+}
+
+#container {
+  /* background-color: bisque; */
+  /* border: 1px solid bisque; */
+  display: grid;
+  align-content: end;
+  position: relative;
+  overflow: hidden;
+}
+
+.val {
+  display: block;
+}
+
+.info_and_controls {
+  padding: 0 16px;
+  gap: 16px;
+  display: flex;
+  color: white;
+}
+
+
+.text {
+    /* background-color:burlywood; */
+    flex-grow: 1;
+}
+
+h1 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    overflow: hidden;
+    font-weight: normal;
+}
+
+h2 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+    overflow: hidden;
+
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: normal;
+}
+.bottom_seekbar {
+
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+}
+.controls span {
+    background-color: brown;
+}
+.auxinfo {
+    position: absolute;
+    color: white;
+    background-color: brown;
+}
+
+.gradient {
+    padding-top: 20px;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0.50) 0%, rgba(0,0,0,0) 100%);
+}
+
+
+video {
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+
+}
+
+@media (height <= 320px) {
+    /* title size */
+    h1 {font-size: 12px; line-height:14px ;}
+    /* description size */
+    h2 {font-size: 10px; line-height:12px ;}
+    /* controls */
+    /* seekbar size */
+    /* captions size */
+  }
+
+
+@media (321px <= height <= 480px) {
+    /* title size */
+    h1 {font-size: 14px; line-height:16px ;}
+    /* description size */
+    h2 {font-size: 12px; line-height:14px ;}
+    /* controls */
+    /* seekbar size */
+    /* captions size */
+}
+
+
+@media (481px <= height <= 768px) {
+    /* title size */
+    h1 {font-size: 16px; line-height:20px ;}
+    /* description size */
+    h2 {font-size: 14px; line-height:16px ;}
+    /* controls */
+    /* seekbar size */
+    /* captions size */
+}
+
+
+@media (769px <= height <= 1366px) {
+    /* title size */
+    h1 {font-size: 18px; line-height:22px ; padding-bottom: 4px;}
+    /* description size */
+    h2 {font-size: 15px; line-height:18px; font-weight: 300;}
+    /* controls */
+    /* seekbar size */
+    /* captions size */
+    .captions .line {font-size: 18px;}
+}
